@@ -1,0 +1,31 @@
+<p-card
+  id="components-viewcar-card"
+  [header]="car.model"
+  [subheader]="'Año ' + car.year"
+  styleClass="p-card-shadow shadow-4 animate__animated animate__fadeIn animate__slow md:m-2"
+>
+  <ng-template pTemplate="header">
+    <img alt="Card" [src]="car.image" />
+  </ng-template>
+  <div class="flex justify-content-between">
+    <span class="components-viewcar-price">${{ car.price }}</span>
+    <p-rating
+      [stars]="5"
+      [ngModel]="car.rating"
+      [cancel]="false"
+      [readonly]="true"
+    ></p-rating>
+  </div>
+  <p-scrollPanel [style]="{ width: '100%', height: '100px' }">
+    <p>
+      {{ car.description }}
+    </p>
+  </p-scrollPanel> 
+  <ng-template pTemplate="footer">
+   <div class="flex justify-content-between">   
+    <button pButton pRipple type="button" icon="pi pi-trash" class="p-button-rounded p-button-danger p-button-lg" (click)="removeToFavorite()" *ngIf="!showButtonAddFavorite"></button>
+    <button pButton pRipple type="button" icon="pi pi-heart" class="p-button-rounded p-button-danger p-button-lg" (click)="addToFavorite()" *ngIf="showButtonAddFavorite"></button>
+    <button pButton pRipple type="button" icon="pi pi-shopping-cart" class="p-button-rounded p-button-success p-button-lg"></button>
+   </div>
+  </ng-template>
+</p-card>

@@ -1,0 +1,21 @@
+<p-dataView
+  id="components-dataviewcar"
+  [value]="cars"
+  [layout]="layout"
+  styleClass="m-5"
+  emptyMessage="No hay datos para mostrar"
+  [paginator]="showPaginator"
+  [rows]="6"
+>
+  <div [hidden]="hiddenDataViewLayoutOptions">
+    <ng-template pTemplate="header">
+      <p-dataViewLayoutOptions></p-dataViewLayoutOptions>
+    </ng-template>
+  </div>
+  <ng-template let-car pTemplate="gridItem">
+    <div class="flex flex-column justify-content-center">
+      <app-view-car id="view-card" [showButtonAddFavorite]="showButtonAddFavorite" [car]="car"></app-view-car>
+    </div>
+  </ng-template>
+  
+</p-dataView>

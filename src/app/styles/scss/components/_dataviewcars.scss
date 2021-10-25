@@ -1,0 +1,10 @@
+#components-dataviewcar{
+    .p-dataview-content{
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        .p-grid{
+            justify-content: center;           
+        }
+    }
+}

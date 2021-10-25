@@ -1,0 +1,86 @@
+<div class="grid mx-0 mb-3 shadow-2 components-filters-car-panel">
+  <div class="col-12">
+    <div class="formgrid grid">
+      <div class="field col-12 md:col-3 flex md:align-items-center md:m-0"> 
+       
+        <p-autoComplete
+          [placeholder]="'Ingrese una palabra'"
+          [(ngModel)]="filterText"
+          [suggestions]="resultText"
+          (completeMethod)="autocomplete($event)"
+        ></p-autoComplete>  
+        <i pButton class="pi  pi-filter ml-0"></i>            
+      </div>
+      <div class="field col-12 md:col-2 md:m-0">
+        <label for="firstname6">Año</label>
+        <p-slider
+          [(ngModel)]="yearRange"
+          [min]="2000"
+          [range]="true"
+          [max]="2021"
+        ></p-slider>
+        <span class="components-filters-car-rangelabel-year">{{
+          yearRange[0] + "-" + yearRange[1]
+        }}</span>
+      </div>
+      <div
+        class="
+          field
+          col-12
+          md:col-2
+          flex
+          align-items-center
+          md:justify-content-center md:m-0
+        "
+      >
+        <p-checkbox
+          [(ngModel)]="isPopular"
+          [binary]="true"
+          label="Solo Populares"
+        ></p-checkbox>
+      </div>
+      <div
+        class="
+          field
+          col-12
+          md:col-2
+          flex
+          align-items-center
+          md:justify-content-center md:m-0
+        "
+      >
+        <p-checkbox
+          [(ngModel)]="isOffert"
+          [binary]="true"
+          label="Solo con Ofertas"
+        ></p-checkbox>
+      </div>
+      <div class="field col-12 md:col-3 flex md:justify-content-end md:m-0">
+        <span
+          class="
+            p-buttonset
+            h-full
+            flex
+            align-items-stretch
+            sm:justify-content-center
+          "
+        >
+          <button
+            pButton
+            type="button"
+            label="Buscar"
+            icon="pi pi-search"
+            (click)="search()"
+          ></button>
+          <button
+            pButton
+            type="button"
+            label="Limpiar"
+            icon="pi pi-refresh"
+            (click)="cleanFilters()"
+          ></button>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>

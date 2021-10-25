@@ -1,0 +1,14 @@
+#components-favorite-sidebar { 
+    h1{
+        border-bottom: 1px solid gray;
+    }   
+  .p-sidebar-left {
+    width: 30%;
+  }
+
+  @media screen and (max-width: 960px) {
+    .p-sidebar-left {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+#view-card {
+  width: 21rem;
+}
+
+#components-viewcar-card {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  .p-card-header {
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 200px;
+      border: none;
+      background: rgb(194, 194, 199);
+      background: linear-gradient(
+        180deg,
+        rgba(194, 194, 199, 0.6839110644257703) 0%,
+        rgba(242, 242, 247, 0.2497373949579832) 100%
+      );
+      transition: all 0.4s ease-in-out;
+    }
+    img:hover {
+      transform: scale(1.1);
+    }
+  }
+  .components-viewcar-price {
+    font-size: 1.5rem;
+    color: rgb(218, 82, 82);
+  }
+  p {
+    text-align: justify;
+  }
+}

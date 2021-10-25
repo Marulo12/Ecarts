@@ -1,0 +1,79 @@
+$background_color_navbar: #052046;
+$color_item_text: white;
+$color_item_text_hover: rgb(218, 82, 82);
+$color_phone_contact: $color_item_text_hover;
+$color_button_menu: $color_item_text_hover;
+
+.layout-p-toolbar {
+  background: $background_color_navbar;
+  border: none;
+  border-radius: 0px;
+  z-index: 1;
+  .layout-header-menubar {
+    background: transparent;
+    border: none;
+    .p-menubar-root-list > .p-menuitem > .p-menuitem-link .p-menuitem-text {
+      color: white;
+      font-size: 1.05rem;
+      font-family: $font_family_default;
+    }
+  }
+}
+
+.layout-header-menubar
+  .p-menubar-root-list
+  > .p-menuitem
+  > .p-menuitem-link:not(.p-disabled):hover {
+  background-color: $background_color_navbar;
+  .p-menuitem-text {
+    color: $color_item_text_hover;
+  }
+}
+
+.layout-header-contact-phone {
+  color: $color_phone_contact;
+  i {
+    color: $color_phone_contact;
+  }
+}
+
+.layout-header-contact-email {
+  color: white;
+  i {
+    color: white;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .layout-p-toolbar {
+    .p-toolbar-group-left,
+    .p-toolbar-group-rigth {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+  }
+  .p-menubar {
+    width: 100vw;
+    top: -47px;
+    left: -5px;
+    position: absolute;
+    margin-top: 43px;
+    &.p-menubar-mobile-active .p-menubar-root-list {
+      background-color: #0520469f;
+      margin: 0px;
+    }
+    .p-menubar-button {
+      background-color: $color_button_menu;
+      color: white;
+      border: 1px solid rgba(95, 95, 95, 0.432);
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .layout-header-contact-phone,
+  .layout-header-contact-email {
+    font-size: 15px;
+  }
+}

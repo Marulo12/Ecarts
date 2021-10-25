@@ -1,0 +1,31 @@
+<div class="grid m-0 mt-6">
+  <div class="col-12 flex justify-content-center">
+    <div class="page-home-brands page-home-generics-titles flex flex-column w-50">
+      <h1 class="mb-0 ">Marcas Más Polupares</h1>
+      <h4 class="mt-2">
+        Todos los días ayudamos a las principales marcas del mundo a crear la
+        mayoría de sus vehículos.
+      </h4>
+      <p-carousel
+        [value]="brands"
+        [circular]="false"
+        [showIndicators]="false"
+        [numVisible]="5"
+        [autoplayInterval]="2000"
+        [showNavigators]="false"
+        [responsiveOptions]="responsiveOptions"
+        styleClass="page-home-brands-carousel"
+      >
+        <ng-template  let-brand pTemplate="item">
+          <div class="flex justify-content-center align-items-center m-2">
+            <img
+              src="./assets/images/home/brands/{{ brand.image }}"
+              [alt]="brand.name"
+              class="page-home-brands-image"
+            />
+          </div>
+        </ng-template>
+      </p-carousel>
+    </div>
+  </div>
+</div>

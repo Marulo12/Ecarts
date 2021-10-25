@@ -1,0 +1,110 @@
+[
+  {
+    "id":1,
+    "idBrand": 1,
+    "model": "A1 Sportback",
+    "year": 2021,
+    "price": 15000,
+    "isPopular": true,
+    "isOffer": false,
+    "image": "./assets/images/car/audi/a1sportback.png",
+    "description": "El nuevo Audi A1 Sportback redefine el segmento compacto. Su llamativo diseño deportivo caracteriza a la segunda generación del exitoso auto compacto. ",
+    "rating": 4
+  },
+  {
+    "id":2,
+    "idBrand": 1,
+    "model": "A3 Sedan",
+    "year": 2021,
+    "price": 9000,
+    "isPopular": false,
+    "isOffer": true,
+    "image": "./assets/images/car/audi/a3sedan.png",
+    "description": "El Audi A3 Sedan combina el carácter de un coupé con un diseño elegante. La cúpula del techo bajo y fluido transmite pura dinámica. Con sus superficies musculosas y tensas, la limusina también irradia confianza en sí misma.",
+    "rating": 4
+  },
+  {
+    "id":3,
+    "idBrand": 1,
+    "model": "A5 Coupé",
+    "year": 2021,
+    "price": 20000,
+    "isPopular": true,
+    "isOffer": false,
+    "image": "./assets/images/car/audi/a5coupe.png",
+    "description": "Llegás a un lugar y sos el centro de atención. Ahí por donde pasas, atraés todas las miradas. Porque el nuevo Audi A5 Coupé es la combinación perfecta de deportividad y diseño elegante. Sorprende a todos.",
+    "rating": 5
+  },
+  {
+    "id":4,
+    "idBrand": 1,
+    "model": "Q3",
+    "year": 2020,
+    "price": 35800,
+    "isPopular": true,
+    "isOffer": false,
+    "image": "./assets/images/car/audi/q3.png",
+    "description": "Descubre el Audi Q3. El Audi Q3 combina fuerza y presencia para no dejar a nadie indiferente. Un modelo que proyecta el nuevo lenguaje de diseño Q.",
+    "rating": 4
+  },
+  {
+    "id":5,
+    "idBrand": 2,
+    "model": "Camaro Coupé",
+    "year": 2021,
+    "price": 40000,
+    "isPopular": true,
+    "isOffer": false,
+    "image": "./assets/images/car/chevrolet/camaro.png",
+    "description": "Escuchá desde lejos como ruge su motor, el Camaro Coupé SS está listo para sorprenderte. Este imponente deportivo de sexta generación, te propone un diseño agresivo, un rendimiento inigualable y una tecnología jamás vista.",
+    "rating": 5
+  },
+  {
+    "id":6,
+    "idBrand": 2,
+    "model": "Equinox",
+    "year": 2021,
+    "price": 11172,
+    "isPopular": false,
+    "isOffer": false,
+    "image": "./assets/images/car/chevrolet/equinox.png",
+    "description": "Explorá todas las posibilidades de la Equinox. Dejá que su sofisticada tecnología te proponga una experiencia simplemente única, mientras disfrutás del confort y la seguridad en su andar.",
+    "rating": 4
+  },
+  {
+    "id":7,
+    "idBrand": 2,
+    "model": "Cruze 5",
+    "year": 2020,
+    "price": 35018,
+    "isPopular": true,
+    "isOffer": false,
+    "image": "./assets/images/car/chevrolet/cruze.png",
+    "description": "Además de la potencia de su motor turbo, la seguridad más avanzada, todo su confort y la exclusiva tecnología WI-FI, en el Nuevo Cruze 5 disfrutás de la unión perfecta entre lo digital y lo analógico en un auto con lo mejor de los dos mundos.",
+    "rating": 4
+  },
+  {
+    "id":8,
+    "idBrand": 2,
+    "model": "Onix Plus",
+    "year": 2021,
+    "price": 9633,
+    "isPopular": true,
+    "isOffer": false,
+    "image": "./assets/images/car/chevrolet/onix.png",
+    "description": "El Onix Plus es un auto diseñado para ofrecerte más de lo que esperás. Cuenta con conectividad total y soluciones innovadoras que integran el auto con tu rutina, como conexión Wi-Fi propia y computadora de abordo.",
+    "rating": 3
+  },
+  {
+    "id":9,
+    "idBrand": 2,
+    "model": "Q3",
+    "year": 2020,
+    "price": 35800,
+    "isPopular": true,
+    "isOffer": false,
+    "image": "./assets/images/car/audi/q3.png",
+    "description": "Descubre el Audi Q3. El Audi Q3 combina fuerza y presencia para no dejar a nadie indiferente. Un modelo que proyecta el nuevo lenguaje de diseño Q.",
+    "rating": 4
+  }
+]

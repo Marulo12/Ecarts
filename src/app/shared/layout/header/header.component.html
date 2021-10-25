@@ -1,0 +1,34 @@
+<p-toolbar styleClass="sticky top-0 layout-p-toolbar ">
+  <div class="p-toolbar-group-left">
+    <img src="./assets/images/home/logo.svg" alt="logo Ecars" />
+    <p-menubar
+      styleClass="layout-header-menubar"
+      [model]="itemsMenu"
+    ></p-menubar>
+  </div>
+  <div class="p-toolbar-group-rigth flex align-items-center">
+    <button
+      pRipple
+      pButton
+      icon="pi pi-heart "
+      class="mr-1 md:mr-2 p-button-secondary p-button-rounded"
+      pTooltip="Ver mis Favoritos"
+      (click)="getFavoritesCards()"
+    ></button>
+    <button
+      pRipple
+      pButton
+      icon="pi pi-shopping-cart "
+      class="mr-1 md:mr-5 p-button-secondary p-button-rounded"
+      pTooltip="Finalizar Compra"
+    ></button>
+    <span class="layout-header-contact-phone mr-1 md:mr-5 text-center"
+      ><i class="pi pi-phone"></i> + 54 3513568794
+    </span>
+    <span class="layout-header-contact-email text-center"
+      ><i class="pi pi-send"></i> mariolucbos@hotmail.com
+    </span>
+  </div>
+</p-toolbar>
+
+<app-favorite-car #modalFavoriteCard></app-favorite-car>

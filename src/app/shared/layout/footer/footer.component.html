@@ -1,0 +1,33 @@
+<div class="relative bottom-0 grid m-0">
+  <div class="col-12 p-0">
+    <div class="layout-footer-bg h-full">
+      <div class="grid m-0 layout-footer-info h-auto p-1">
+        <div class=" col-12  md:col-5 flex flex-column justify-content-center align-items-center p-5"
+        >
+          <span id="title-newslatter" class="text-left w-full"
+            >Suscríbete para Newslatter</span
+          >
+          <div class="p-inputgroup">
+            <input type="text" pInputText placeholder="Email" />
+            <button
+              type="button"
+              pButton
+              pRipple
+              icon="pi pi-check"
+              styleClass="p-button-warn"
+              (click)="sendEmail()"
+            ></button>
+          </div>
+        </div>
+        <div class="col-12 md:col-7 flex flex justify-content-end">
+          <img
+            class="layout-footer-info-logo"
+            src="./assets/images/home/logo.svg"
+            alt="logo ecarts"
+          />
+        </div>
+        <p>© 2020 All right reserved ECARTS</p>
+      </div>
+    </div>
+  </div>
+</div>
