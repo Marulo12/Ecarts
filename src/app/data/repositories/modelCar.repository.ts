@@ -20,8 +20,7 @@ export class ModelCarDataRepository extends ModelCarRepository {
           .replace(' ', '')
           .includes(paramm.toLowerCase().replace(' ', ''))
       );
-
-    console.log(models);
+   
     return of(...models).pipe(toArray());
   }
 }
