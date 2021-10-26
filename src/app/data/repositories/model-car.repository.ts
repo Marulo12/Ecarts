@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { toArray } from 'rxjs/operators';
-import { ModelCarRepository } from 'src/app/core/repositories/modelCar.repository';
+import { ModelCarRepository } from 'src/app/core/repositories/model-car.repository';
 import Cars from '../list-cars.json';
 
 @Injectable({ providedIn: 'root' })

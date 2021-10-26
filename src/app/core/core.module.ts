@@ -8,6 +8,6 @@ import { favoriteCarReducer } from './store/reducers/favorite-car.reducers';
   imports: [
     StoreModule.forRoot({ favorite: favoriteCarReducer }),
     EffectsModule.forRoot([FavoriteCarEffects]),
-  ],
+  ]
 })
 export class CoreModule {}

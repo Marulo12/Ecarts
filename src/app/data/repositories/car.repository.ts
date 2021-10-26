@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
-import { filter, scan, take } from 'rxjs/operators';
+import { from, Observable } from 'rxjs';
+import { filter, take } from 'rxjs/operators';
 import { Car } from 'src/app/core/models/car.model';
 import { CardRepository } from 'src/app/core/repositories/card.repository';
 import { QueryParammsCar } from 'src/app/core/useCases/car/query-paramms-car';
@@ -14,7 +14,7 @@ export class CarDataRepository extends CardRepository {
 
   GetRecentCars(): Observable<Car> {
     const currentYear = new Date().getFullYear();
-    return of(...Cars).pipe(
+    return from(Cars).pipe(
       filter((x) => x.year == currentYear),
       take(6)
     );
@@ -51,6 +51,6 @@ export class CarDataRepository extends CardRepository {
     cars = cars.filter(
       (c) => c.year >= paramms.yearFrom && c.year <= paramms.yearUntil
     );
-    return of(...cars);
+    return from(cars);
   }
 }

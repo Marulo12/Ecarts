@@ -15,8 +15,10 @@ import { CarDataRepository } from './data/repositories/car.repository';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrimeNGModule } from './styles/prime-ng/prime-ng.module';
-import { ModelCarRepository } from './core/repositories/modelCar.repository';
-import { ModelCarDataRepository } from './data/repositories/modelCar.repository';
+import { ModelCarRepository } from './core/repositories/model-car.repository';
+import { ModelCarDataRepository } from './data/repositories/model-car.repository';
+import { CategoryRepository } from './core/repositories/category.repository';
+import { CategoryDataRepository } from './data/repositories/category.repository';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,7 @@ import { ModelCarDataRepository } from './data/repositories/modelCar.repository'
     { provide: BrandRepository, useClass: BrandDataRepository },
     { provide: CardRepository, useClass: CarDataRepository },
     { provide: ModelCarRepository, useClass: ModelCarDataRepository },
+    { provide: CategoryRepository, useClass: CategoryDataRepository },
   ],
   bootstrap: [AppComponent],
 })

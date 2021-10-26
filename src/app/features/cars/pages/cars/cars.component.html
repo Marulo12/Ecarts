@@ -1,5 +1,7 @@
 <div class="grid grid-nogutter m-0 min-h-screen p-3">
-    <div class="col-12 md:col-2"></div>
+    <div class="col-12 md:col-2 flex  pr-5 justify-content-start">
+        <app-categories-cars></app-categories-cars>
+    </div>
     <div class="col-12 md:col-10">
         <app-filters-cars (filters)="search($event)"></app-filters-cars>
         <p-divider></p-divider>

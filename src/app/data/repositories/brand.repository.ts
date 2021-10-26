@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, of } from 'rxjs';
+import { from, Observable } from 'rxjs';
 import { Brand } from 'src/app/core/models/brand.model';
 import { BrandRepository } from 'src/app/core/repositories/brand.repository';
 import Brands from '../list-brands.json';
@@ -12,7 +12,7 @@ export class BrandDataRepository extends BrandRepository {
     }
 
     getAllBrands(): Observable<Brand> {
-        return of(...Brands);
+        return from(Brands);
     }
         
 }

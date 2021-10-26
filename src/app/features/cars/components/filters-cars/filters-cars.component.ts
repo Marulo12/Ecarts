@@ -5,7 +5,7 @@ import {
   OnInit,
   Output,
 } from '@angular/core';
-import { ModelCarService } from '../../service/modelCar.service';
+import { ModelCarService } from '../../service/model-car.service';
 
 @Component({
   selector: 'app-filters-cars',

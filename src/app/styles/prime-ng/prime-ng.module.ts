@@ -15,7 +15,7 @@ import { SidebarModule } from 'primeng/sidebar';
 import { SliderModule } from 'primeng/slider';
 import { CheckboxModule } from 'primeng/checkbox';
 import { AutoCompleteModule } from 'primeng/autocomplete';
-
+import { TreeModule } from 'primeng/tree';
 @NgModule({
   declarations: [],
   exports: [
@@ -35,6 +35,7 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
     SliderModule,
     CheckboxModule,
     AutoCompleteModule,
+    TreeModule
   ],
 })
-export class PrimeNGModule {}
+export class PrimeNGModule { }
