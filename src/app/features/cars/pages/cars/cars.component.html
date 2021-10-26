@@ -1,8 +1,8 @@
 <div class="grid grid-nogutter m-0 min-h-screen p-3">
-    <div class="col-12 md:col-2 flex  pr-5 justify-content-start">
+    <div class="col-12 md:col-2 flex sm:mb-6  md:pr-3 justify-content-start">
         <app-categories-cars></app-categories-cars>
     </div>
-    <div class="col-12 md:col-10">
+    <div class="col-12 sm:mt-6 md:col-10">
         <app-filters-cars (filters)="search($event)"></app-filters-cars>
         <p-divider></p-divider>
         <app-dataviewcars [showPaginator]="true" [cars]="carService.cars"></app-dataviewcars>
