@@ -1,6 +1,14 @@
 <div class="grid">
-    <div class="col-12">
-        <p-tree [value]="categories" styleClass="shadow-3"></p-tree>
-    </div>
+  <div class="col-12 p-0">     
+    <div class="component-category-car-panel  sm:h-auto md:h-screen shadow-3 ">
+      <h2 class="p-2 text-center border-bottom-1 mt-0 ">Categorías</h2>
+      <p-tree
+      [value]="categories"
+      selectionMode="checkbox"
+      [(selection)]="selectedCategories"
+      styleClass=" m-0 p-1 "
+      (onNodeSelect)="nodeSelect()" (onNodeUnselect)="nodeUnselect()"           
+    ></p-tree>
+    </div>       
+  </div>
 </div>
-

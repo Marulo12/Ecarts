@@ -1,6 +1,5 @@
-export interface QueryParammsCar{
-    idBranchs: number[];
-    models: string[];
+export interface QueryParammsCar{   
+    idModels: number[];
     yearFrom: number;
     yearUntil: number;
     isPopular: boolean;

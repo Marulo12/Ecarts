@@ -22,15 +22,11 @@ export class CarDataRepository extends CardRepository {
 
   GetCars(paramms: QueryParammsCar): Observable<Car> {
     let cars = Cars;
-
-    if (paramms.idBranchs.length > 0) {
-      cars = cars.filter((c) => paramms.idBranchs?.includes(c.id));
+           
+    if (paramms.idModels && paramms.idModels.length > 0) {
+      cars = cars.filter((c) => paramms.idModels.includes(c.id));
     }
-
-    if (paramms.models.length > 0) {
-      cars = cars.filter((c) => paramms.models?.includes(c.model));
-    }
-
+  
     if (paramms.isOffer) {
       cars = cars.filter((c) => c.isOffer == true);
     }

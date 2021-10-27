@@ -1,8 +1,17 @@
 .components-filters-car-panel {
-    background: rgb(95, 157, 241);
-    background: linear-gradient(90deg, rgba(95, 157, 241, 1) 0%, rgba(10, 90, 131, 1) 100%);
-    label,
-    .components-filters-car-rangelabel-year {
-        color: white;
-    }
+  background: rgb(57, 111, 167);
+  background: linear-gradient(
+    297deg,
+    rgba(57, 111, 167, 1) 0%,
+    rgba(21, 42, 93, 0.9920343137254902) 100%
+  );
+  label,
+  .components-filters-car-rangelabel-year {
+    color: white;
+  }
+}
+
+#components-filters-icon-filter {
+  height: 39px;
+  left: -10px;
 }

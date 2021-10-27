@@ -23,16 +23,21 @@ export class CarsComponent implements OnInit, OnDestroy {
       this.carService.subjectCar$.subscribe((r) => {
         this.carService.cars.push(r);
       })
-    );  
+    );
     this.carService.getCars();
   }
 
-  search(event: any) {
+  searchForFilters(event: any) {
     this.carService.queryParamms.isPopular = event.isPopular;
     this.carService.queryParamms.isOffer = event.isOffer;
     this.carService.queryParamms.yearFrom = event.yearRange[0];
     this.carService.queryParamms.yearUntil = event.yearRange[1];
     this.carService.queryParamms.filterText = event.filterText;
+    this.carService.getCars();
+  }
+
+  searchForCategory(event: any) {          
+    this.carService.queryParamms.idModels = event.idModels;
     this.carService.getCars();
   }
 }

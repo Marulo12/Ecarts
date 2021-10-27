@@ -24,7 +24,8 @@ export class CategoryDataRepository extends CategoryRepository {
         let models = Cars.map(m => {
             return <CategoryItem>{
                 idBrand: m.idBrand,
-                modelName: m.model
+                modelName: m.model,
+                idModel: m.id
             }
         });
 

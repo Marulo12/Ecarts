@@ -7,9 +7,9 @@
           [placeholder]="'Ingrese una palabra'"
           [(ngModel)]="filterText"
           [suggestions]="resultText"
-          (completeMethod)="autocomplete($event)"
+          (completeMethod)="autocomplete($event)"         
         ></p-autoComplete>  
-        <i pButton class="pi  pi-filter ml-0"></i>            
+        <i id="components-filters-icon-filter" pButton class="pi  pi-filter ml-0"></i>            
       </div>
       <div class="field col-12 md:col-2 md:m-0">
         <label for="firstname6">Año</label>

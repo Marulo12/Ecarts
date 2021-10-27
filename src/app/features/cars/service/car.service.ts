@@ -14,9 +14,8 @@ export class CarService {
   constructor(private getCarsUseCase: GetCarsUseCase) {
     this.cars = [];
     this.subjectCar$ = new Subject<Car>();
-    this.queryParamms = {
-      idBranchs: [],
-      models: [],
+    this.queryParamms = {     
+      idModels: [],
       yearFrom: 0,
       yearUntil: new Date().getFullYear(),
       isPopular: false,
@@ -39,9 +38,8 @@ export class CarService {
   }
 
   cleanFilters() {
-    this.queryParamms = {
-      idBranchs: [],
-      models: [],
+    this.queryParamms = {    
+      idModels: [],
       yearFrom: 0,
       yearUntil: new Date().getFullYear(),
       isPopular: false,

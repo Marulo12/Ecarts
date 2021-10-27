@@ -4,6 +4,5 @@
   { "id": 3, "name": "Ferrari", "image": "ferrari.png" },
   { "id": 4, "name": "Ford", "image": "ford.png" },
   { "id": 5, "name": "Lamborghini", "image": "lamborghini.png" },
-  { "id": 6, "name": "Peugeot", "image": "peugeot.png" },
-  { "id": 7, "name": "Tesla", "image": "tesla.png" }
+  { "id": 6, "name": "Peugeot", "image": "peugeot.png" } 
 ]

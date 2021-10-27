@@ -7,4 +7,5 @@ export interface Category{
 export interface CategoryItem{
     idBrand: number;
     modelName: string;
+    idModel: number;
 }
