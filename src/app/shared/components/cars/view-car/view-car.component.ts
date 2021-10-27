@@ -5,6 +5,7 @@ import {
   addCarToFavorite,
   removeCarToFavorite,
 } from 'src/app/core/store/actions/favorite-car.actions';
+import { addCarToCart } from 'src/app/core/store/actions/shopping-cart.actions';
 
 @Component({
   selector: 'app-view-car',
@@ -14,7 +15,7 @@ import {
 export class ViewCarComponent implements OnInit {
   @Input() car: Car;
   @Input() showButtonAddFavorite: boolean;
-  constructor(private store: Store<{ favorite: Car }>) {
+  constructor(private store: Store) {
     this.showButtonAddFavorite = true;
     this.car = {
       id: 0,
@@ -39,4 +40,9 @@ export class ViewCarComponent implements OnInit {
   removeToFavorite() {
     this.store.dispatch(removeCarToFavorite({ idCar: this.car.id }));
   }
+
+  addToShoppingCart(){
+    this.store.dispatch(addCarToCart({ car: this.car }));
+  }
+  
 }

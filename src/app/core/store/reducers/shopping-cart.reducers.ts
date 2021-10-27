@@ -1,5 +1,10 @@
 import { Action, createReducer, on } from '@ngrx/store';
-import { addCarToCart, GetShoppingCart, removeCarToCart } from '../actions/shopping-cart.actions';
+import { ShoppingCart } from '../..';
+import {
+  addCarToCart,
+  GetShoppingCart,
+  removeCarToCart,
+} from '../actions/shopping-cart.actions';
 import { ShoppingCartState } from '../states/shopping-cart.state';
 
 const initialState: ShoppingCartState = {
@@ -9,11 +14,24 @@ const initialState: ShoppingCartState = {
 const _shoppingCartReducer = createReducer(
   initialState,
   on(addCarToCart, (state, { car }) => {
-    let cars = state.cars;
+    let cars = [...state.cars];
 
-    cars.forEach((item) => {
+    if (cars.length === 0) {
+      cars.push({
+        car,
+        quantity: 1,
+      });
+
+      return { cars };
+    }
+
+    cars.forEach((item, index) => {
       if (item.car.id == car.id) {
-        item.quantity++;
+        cars.splice(index, 1);
+        cars.push({
+          car,
+          quantity: item.quantity + 1,
+        });
       } else {
         cars.push({
           car,
@@ -21,7 +39,7 @@ const _shoppingCartReducer = createReducer(
         });
       }
     });
-
+   
     return { cars };
   }),
 
@@ -30,8 +48,13 @@ const _shoppingCartReducer = createReducer(
 
     cars.forEach((item, index) => {
       if (item.car.id == idCar) {
-        item.quantity--;
+        cars.splice(index, 1);
+        cars.push({
+          car: item.car,
+          quantity: item.quantity - 1,
+        });
       }
+
       if (item.quantity === 0) {
         cars.splice(index, 1);
       }

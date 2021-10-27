@@ -25,7 +25,7 @@
    <div class="flex justify-content-between">   
     <button pButton pRipple type="button" icon="pi pi-trash" class="p-button-rounded p-button-danger p-button-lg" (click)="removeToFavorite()" *ngIf="!showButtonAddFavorite"></button>
     <button pButton pRipple type="button" icon="pi pi-heart" class="p-button-rounded p-button-danger p-button-lg" (click)="addToFavorite()" *ngIf="showButtonAddFavorite"></button>
-    <button pButton pRipple type="button" icon="pi pi-shopping-cart" class="p-button-rounded p-button-success p-button-lg"></button>
+    <button pButton pRipple type="button" icon="pi pi-shopping-cart" class="p-button-rounded p-button-success p-button-lg" (click)="addToShoppingCart()"></button>
    </div>
   </ng-template>
 </p-card>

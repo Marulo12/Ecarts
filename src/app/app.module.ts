@@ -20,10 +20,11 @@ import { ModelCarDataRepository } from './data/repositories/model-car.repository
 import { CategoryRepository } from './core/repositories/category.repository';
 import { CategoryDataRepository } from './data/repositories/category.repository';
 
+
 @NgModule({
   declarations: [
     AppComponent,   
-    ToastNotificationsComponent    
+    ToastNotificationsComponent
   ],
   imports: [CommonModule, BrowserModule , BrowserAnimationsModule, PrimeNGModule ,SharedModule, CoreModule, AppRoutingModule],
   providers: [
