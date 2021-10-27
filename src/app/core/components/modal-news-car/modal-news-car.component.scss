@@ -1,0 +1,17 @@
+.modal-new-image {
+  img {     
+    object-fit: contain;
+    object-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+:host ::ng-deep {
+  .p-dialog-content {
+    padding: 0px;
+    overflow-y: hidden;
+  }
+  .p-dialog .p-dialog-header {
+    background-color: rgba(0, 0, 0, 0.981);
+  }
+}

@@ -20,6 +20,8 @@ import { ScrollTopModule } from 'primeng/scrolltop';
 import { OrderListModule } from 'primeng/orderlist';
 import { MessagesModule } from 'primeng/messages';
 import { MessageModule } from 'primeng/message';
+import {DialogModule} from 'primeng/dialog';
+
 @NgModule({
   declarations: [],
   exports: [
@@ -44,6 +46,7 @@ import { MessageModule } from 'primeng/message';
     OrderListModule,
     MessagesModule,
     MessageModule,
+    DialogModule
   ],
 })
 export class PrimeNGModule {}

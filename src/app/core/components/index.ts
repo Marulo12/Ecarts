@@ -1,0 +1,1 @@
+export * from './modal-news-car/modal-news-car.component';
