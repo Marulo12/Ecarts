@@ -1,0 +1,35 @@
+<div class="grid m-0">
+    <div class="col-12 md:col-6">
+       <p-card>
+            <h2>Regístrese y pronto nos comunicaremos.</h2>
+            <div class="formgrid grid">
+                <div class="field col-12 md:col-6">
+                    <label for="firstname">Nombres</label>
+                    <input id="firstname" type="text" class="inputfield w-full">
+                </div>
+                <div class="field col-12 md:col-6">
+                    <label for="lastname">Apellidos</label>
+                    <input id="lastname" type="text" class="inputfield w-full">
+                </div>
+                <div class="field col-12">
+                    <label for="address">Direccion</label>
+                    <textarea id="address" type="text" rows="4" class="inputfield w-full"></textarea>
+                </div>
+                <div class="field col-12 md:col-4">
+                    <label for="city">Ciudad</label>
+                    <input id="city" type="text" class="inputfield w-full">
+                </div>                               
+                <div class="field col-12 md:col-4">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" class="inputfield w-full">
+                </div>
+                <div class="field col-12 md:col-4 flex align-items-end">
+                    <button pButton class="p-button-info" label="Enviar" (click)="send()"></button>
+                </div>
+            </div>
+        </p-card>
+    </div>
+    <div class="col-12 md:col-6">       
+            <iframe class="w-full h-full"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13676.596202205748!2d-64.07049187206246!3d-31.022096665954205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432626eac44a027%3A0x85b6e301081d1c22!2sCol.%20Caroya%2C%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1635351732341!5m2!1ses!2sar" style="border:0;"  loading="lazy"></iframe>       
+    </div>
+</div>

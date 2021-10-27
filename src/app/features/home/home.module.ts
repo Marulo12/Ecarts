@@ -8,6 +8,8 @@ import { HomeBrandsComponent } from './components/home-brands/home-brands.compon
 import { HomeStadisticsComponent } from './components/home-stadistics/home-stadistics.component';
 import { HomeListRecentCarsComponent } from './components/home-list-recent-cars/home-list-recent-cars.component';
 import { PrimeNGModule } from 'src/app/styles/prime-ng/prime-ng.module';
+import { HomeAboutUsComponent } from './pages/home-about-us/home-about-us.component';
+import { HomeContactsComponent } from './pages/home-contacts/home-contacts.component';
 
 
 @NgModule({
@@ -17,7 +19,9 @@ import { PrimeNGModule } from 'src/app/styles/prime-ng/prime-ng.module';
     HomeFullImageComponent,
     HomeBrandsComponent,
     HomeStadisticsComponent,
-    HomeListRecentCarsComponent
+    HomeListRecentCarsComponent,
+    HomeAboutUsComponent,
+    HomeContactsComponent
   ],
   imports: [SharedModule, HomeRoutingModule, PrimeNGModule],
 })

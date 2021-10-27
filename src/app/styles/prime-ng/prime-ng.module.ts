@@ -16,8 +16,10 @@ import { SliderModule } from 'primeng/slider';
 import { CheckboxModule } from 'primeng/checkbox';
 import { AutoCompleteModule } from 'primeng/autocomplete';
 import { TreeModule } from 'primeng/tree';
-import {ScrollTopModule} from 'primeng/scrolltop';
-
+import { ScrollTopModule } from 'primeng/scrolltop';
+import { OrderListModule } from 'primeng/orderlist';
+import { MessagesModule } from 'primeng/messages';
+import { MessageModule } from 'primeng/message';
 @NgModule({
   declarations: [],
   exports: [
@@ -38,7 +40,10 @@ import {ScrollTopModule} from 'primeng/scrolltop';
     CheckboxModule,
     AutoCompleteModule,
     TreeModule,
-    ScrollTopModule
+    ScrollTopModule,
+    OrderListModule,
+    MessagesModule,
+    MessageModule,
   ],
 })
-export class PrimeNGModule { }
+export class PrimeNGModule {}

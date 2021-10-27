@@ -1,1 +1,17 @@
-<p>shopping-cart works!</p>
+<div class="grid m-0 min-h-screen">
+    <div class="col-12 md:col-8">
+        <app-shoping-cart-items></app-shoping-cart-items>
+    </div>
+    <div class="col-12 md:col-4">
+        <p-card header="Métodos de Pagos" subheader="Continuar con la compra" [style]="{width: '360px'}" styleClass="p-card-shadow">
+            <ng-template pTemplate="header">
+                <img alt="Card" src="assets/images/shopping/tarjetas.png">
+            </ng-template>  
+            <p>Se aceptan todas las tarjetas que figuran en la imagen.</p>      
+            <p>Consultar por envíos a domicilio antes de seguir.</p>           
+            <ng-template pTemplate="footer">
+                <p-button label="Continuar" styleClass="w-full" icon="pi pi-check" (click)="pay()"></p-button>                
+            </ng-template>
+        </p-card>
+    </div>
+</div>

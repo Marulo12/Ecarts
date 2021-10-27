@@ -1,0 +1,57 @@
+<div class="grid">
+  <div class="col-12">
+    <p-message
+      *ngIf="cars.length == 0"
+      severity="info"
+      styleClass="w-full"
+      text="El carro esta vacío, agregue al menos uno."
+    >
+    </p-message>
+
+    <div class="w-full" *ngFor="let item of cars">
+      <p-card class="m-1 shopping-cart-card m-0">
+        <div class="shopping-cart-items">
+          <div class="grid flex w-full justify-content-center">
+            <div class="col-6 flex flex-column">
+              <img src="{{ item.car.image }}" />
+              <h2 class="text-center">
+                {{ item.car.model }} - {{ item.car.year }}
+              </h2>
+            </div>
+            <div
+              class="col-3 flex flex-column align-items-center justify-content-center shopping-cart-card-prices"
+            >
+              <h2 class="text-center m-0">$P/U: {{ item.car.price }}</h2>
+              <h2 class="text-center m-0">
+                $SubTotal: {{ item.car.price * item.quantity }}
+              </h2>
+            </div>
+            <div class="col-3 flex align-items-center justify-content-end">
+              <div class="mr-4 flex align-items-center">
+                <button
+                  pButton
+                  class="p-button-info p-button-rounded p-button-text"
+                  icon="pi pi-caret-left"
+                  (click)="discountItem(item.car.id)"
+                ></button>
+                <h4>{{ item.quantity }}</h4>
+                <button
+                  pButton
+                  class="p-button-info p-button-rounded p-button-text"
+                  icon="pi pi-caret-right"
+                  (click)="sumItem(item.car.id)"
+                ></button>
+              </div>
+              <button
+                pButton
+                class="p-button-danger"
+                icon="pi pi-trash"
+                (click)="remoteToCart(item.car.id)"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </p-card>
+    </div>
+  </div>
+</div>

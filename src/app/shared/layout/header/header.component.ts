@@ -29,9 +29,11 @@ export class HeaderComponent implements OnInit {
       },
       {
         label: 'Quienes Somos',
+        routerLink:'/about'
       },
       {
-        label: 'Contáctanos',
+        label: 'Contáctenos',
+        routerLink: '/contact'
       },
     ];
   }
