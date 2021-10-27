@@ -1,6 +1,6 @@
-$background_color_navbar: #052046;
+$background_color_navbar: $base-color-secondary;
 $color_item_text: white;
-$color_item_text_hover: rgb(218, 82, 82);
+$color_item_text_hover: $base-color-primary;
 $color_phone_contact: $color_item_text_hover;
 $color_button_menu: $color_item_text_hover;
 
@@ -60,7 +60,7 @@ $color_button_menu: $color_item_text_hover;
     position: absolute;
     margin-top: 43px;
     &.p-menubar-mobile-active .p-menubar-root-list {
-      background-color: #0520469f;
+      background-color: $base-color-secondary;
       margin: 0px;
     }
     .p-menubar-button {

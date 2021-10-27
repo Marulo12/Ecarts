@@ -3,14 +3,14 @@
   h1 {
     font-size: 2.4rem;
     font-weight: bold;
-    color: #052046;
+    color: $base-color-secondary;
   }
   h4 {
     font-size: 1.2rem;
     font-weight: 400;
     text-align: justify;
     width: 50%;
-    color: #052046;
+    color: $base-color-secondary;
   }
   h1,
   h4 {
@@ -35,7 +35,7 @@
   color: white;
   width: 100%;
   span {
-    color: rgb(218, 82, 82);
+    color: $base-color-primary;
     font-family: $font_family_bree;
   }
 }
@@ -91,15 +91,15 @@
 }
 
 .page-home-service-card-bg-red {
-  background-color: rgb(218, 82, 82);
+  background-color: $base-color-primary
 }
 
 .page-home-service-card-bg-blue {
-  background-color: #052046;
+  background-color: $base-color-secondary
 }
 
 .page-home-service-card-bg-dark {
-  background-color: #1b1b1b;
+  background-color: $base-color-tertiary;
 }
 
 // section brands
@@ -121,19 +121,19 @@
 .app-home-stadistics {
  .material-icons {
     font-size: 3rem;
-    color: rgb(218, 82, 82);
+    color: $base-color-primary;
     margin-bottom: 10px;
   }
   .app-home-stadistics-label{
     font-size: 1.2rem;
-    color: #052046;
+    color: $base-color-secondary;
     font-weight: 400;
     margin-bottom: 10px;
   }
 
   .app-home-stadistics-number{
     font-size: 1.8rem;
-    color: #052046;
+    color: $base-color-secondary;
     font-weight: 800;
     margin-top: 2px;
   }  
@@ -142,7 +142,7 @@
 .app-home-stadistics-quote{
   position: relative;
   font-size: 2.1rem;
-  color: #052046;
+  color: $base-color-secondary;
   bottom: -10px;
   left: -18px;
 }
@@ -152,5 +152,5 @@
   font-weight: 100;
   word-spacing: 2px;
   text-align: justify;
-  color: #05204698;
+  color: $base-color-paragraph;
 }

@@ -20,7 +20,7 @@
   }
 
   .p-tree .p-tree-container .p-treenode .p-treenode-content.p-highlight {
-    color: black;
+    color: $base-color-secondary;
     background-color: transparent;
   }
 
@@ -28,7 +28,7 @@
     .p-tree-container
     .p-treenode
     .p-treenode-content.p-treenode-selectable:not(.p-highlight):hover {
-    color: black;
+    color: $base-color-secondary;
     background-color: transparent;
   }
 }

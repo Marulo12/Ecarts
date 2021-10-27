@@ -12,21 +12,21 @@
       <p-card class="m-1 shopping-cart-card m-0">
         <div class="shopping-cart-items">
           <div class="grid flex w-full justify-content-center">
-            <div class="col-6 flex flex-column">
+            <div class="col-12 md:col-6 flex flex-column">
               <img src="{{ item.car.image }}" />
               <h2 class="text-center">
                 {{ item.car.model }} - {{ item.car.year }}
               </h2>
             </div>
             <div
-              class="col-3 flex flex-column align-items-center justify-content-center shopping-cart-card-prices"
+              class="col-12 md:col-3 flex flex-column align-items-center justify-content-center shopping-cart-card-prices"
             >
-              <h2 class="text-center m-0">$P/U: {{ item.car.price }}</h2>
+              <h2 class="text-center m-0">P/u: ${{ item.car.price }}</h2>
               <h2 class="text-center m-0">
-                $SubTotal: {{ item.car.price * item.quantity }}
+                SubTotal: ${{ item.car.price * item.quantity }}
               </h2>
             </div>
-            <div class="col-3 flex align-items-center justify-content-end">
+            <div class="col-12 md:col-3 flex align-items-center justify-content-end">
               <div class="mr-4 flex align-items-center">
                 <button
                   pButton
